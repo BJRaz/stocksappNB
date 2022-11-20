@@ -9,11 +9,8 @@ import java.io.FileNotFoundException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -26,7 +23,7 @@ public class StockStore implements IStockStore {
 
     StockStore() {
         try {
-            reader = new CsvReader("/Users/brian/Desktop/transaktionsfil-2014.csv");
+            reader = new CsvReader("/path/to/transactionfile.csv");
 
         } catch (FileNotFoundException ex) {
             Logger.getLogger(StockStore.class.getName()).log(Level.SEVERE, null, ex);

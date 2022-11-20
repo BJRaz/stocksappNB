@@ -81,4 +81,14 @@ public class CsvReaderTest {
      
     }
 
+    @Test
+    public void testIterator() {
+        System.out.println("iterator");
+        CsvReader instance = null;
+        Iterator expResult = null;
+        Iterator result = instance.iterator();
+        assertEquals(expResult, result);
+        fail("The test case is a prototype.");
+    }
+
 }
